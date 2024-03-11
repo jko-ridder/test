@@ -24,6 +24,9 @@ function visaTabell(nummer) {
     generateTable(nummer);
 }
 
+let modal = document.getElementById("modal");
+
+
 function startPractice(nummer) {
     console.log("Nu startar övningen för ", nummer);
 
@@ -35,12 +38,12 @@ function startPractice(nummer) {
         let fragetext = `${nummer} * ${slumpatNummer} = ?`;
         
         console.log(fragetext)
-        //uppdaterar dom för att visa frågan
+
+        //uppdaterar DOM för att visa frågan
         let frageTextElement = document.querySelector("#fragetext");
         let svarElement = document.getElementById("svar");
         frageTextElement.textContent = fragetext;
         svarElement.value = ""; //rensar svar
-        let modal = document.getElementById("modal")
         modal.style.display = "block"; 
     }
     generatePracticeTable(nummer);

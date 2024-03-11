@@ -24,7 +24,7 @@ body {
 .practiceButton:hover {
     background-color: rgb(159, 202, 159);
 }
-.modal {
+#modal {
     display: none;
     position: fixed;
     z-index: 1;
