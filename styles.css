@@ -1,0 +1,66 @@
+body {
+    text-align: center;
+}
+.nummer {
+    cursor: pointer;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.nummer.active {
+    background-color: rgb(38, 97, 21);
+    color: white;
+}
+.practiceButton {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+.practiceButton:hover {
+    background-color: rgb(159, 202, 159);
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 5px;
+    text-align: center;
+}
+/* Stil för svar */
+#svar {
+    margin-top: 10px;
+}
+/* Stil för knappar */
+.knapp {
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.knapp-green {
+    background-color: green;
+    color: white;
+}
+.knapp-red {
+    background-color: red;
+    color: white;
+}

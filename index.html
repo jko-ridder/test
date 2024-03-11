@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplikation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Välj multiplikationstabell: </h2>
+    <div id="menyMultiplikation">
+        <span class="nummer" onclick="visaTabell(1)">1</span>
+        <span class="nummer" onclick="visaTabell(2)">2</span>
+        <span class="nummer" onclick="visaTabell(3)">3</span>
+        <span class="nummer" onclick="visaTabell(4)">4</span>
+        <span class="nummer" onclick="visaTabell(5)">5</span>
+        <span class="nummer" onclick="visaTabell(6)">6</span>
+        <span class="nummer" onclick="visaTabell(7)">7</span>
+        <span class="nummer" onclick="visaTabell(8)">8</span>
+        <span class="nummer" onclick="visaTabell(9)">9</span>
+        <span class="nummer" onclick="visaTabell(10)">10</span>
+    </div>
+    <div id="tabell"></div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <p class="fragetext"></p>
+            <input type="text" id="svar" placeholder="Skriv ditt svar här">
+            <button class="knapp" onClick="kontrolleraSvar()">Kontrollera svar</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
