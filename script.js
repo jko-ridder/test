@@ -45,6 +45,17 @@ function startPractice(nummer) {
         frageTextElement.textContent = fragetext;
         svarElement.value = ""; //rensar svar
         modal.style.display = "block"; 
+
+
     }
+            //modal closing listener
+            document.addEventListener("click", function(event) {
+                if (event.target.id !== "modal" && !event.target.closest("#modal")) {
+                    modal.style.display = "none";
+                }
+            });
+            
     generatePracticeTable(nummer);
 }
+
+
